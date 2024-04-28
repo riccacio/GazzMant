@@ -18,6 +18,19 @@
     vertical-align: middle;
 }
 
+.a-nav-custom{
+    display: flex;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color:white;
+    text-decoration: none;
+}
+
+.a-nav-custom:hover {
+    text-decoration: underline;
+}
+
 ul.navbar-brand {
     list-style-type: none; /* Rimuove i puntini di default degli elementi <li> */
     margin: 0;
@@ -25,7 +38,36 @@ ul.navbar-brand {
     vertical-align: middle;
 }
 
+.center-li-custom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .zoom-effect:hover {
     transform: scale(1.1);
     transition: transform 0.1s ease-in-out;
+}
+
+.facebook{
+    width: 28px;
+    height: 32px;
+}
+
+.navbar-large {
+    display: block;
+}
+
+.navbar-small {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .navbar-large {
+        display: none;
+    }
+
+    .navbar-small {
+        display: block;
+    }
 }
