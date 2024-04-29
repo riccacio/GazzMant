@@ -7,6 +7,22 @@
     margin: 0;
 }
 
+.hr-color {
+    border-top: 3px solid #1a3b70;
+}
+
+.bg-custom-small {
+    background-color: #0c1a32;
+    height: 50px;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+}
+.bg-custom-div{
+    background-color: #F7F7F7;
+}
+
 .btn-bg-custom{
     background-color: #ffe500;
     color: black;
@@ -32,7 +48,10 @@
 }
 
 ul.navbar-brand {
-    list-style-type: none; /* Rimuove i puntini di default degli elementi <li> */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     vertical-align: middle;
@@ -62,6 +81,10 @@ ul.navbar-brand {
     display: none;
 }
 
+.navbar-smaller {
+    display: block;
+}
+
 @media (max-width: 1100px) {
     .navbar-large {
         display: none;
@@ -70,4 +93,57 @@ ul.navbar-brand {
     .navbar-small {
         display: block;
     }
+    div{
+        flex-display: column; !important;
+    }
+    .fullscreen-div {
+        width: 80%;
+        margin-top:0px;
+    }
+}
+
+@media (max-width: 830px) {
+    .navbar-smaller {
+        display: none;
+    }
+    div{
+        flex-display: column; !important;
+    }
+    .fullscreen-div {
+        width: 80%;
+        margin-top:0px;
+    }
+}
+
+.fullscreen-div {
+    width: 80%;
+    margin-top: 50px;
+}
+
+.header-custom {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.span-custom {
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.span-weather-custom {
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.align-bottom-custom{
+    align-items: flex-end;
+}
+
+.nav-small{
+    margin-top:50px;
 }
