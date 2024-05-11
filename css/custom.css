@@ -33,6 +33,41 @@
     border: none;
     vertical-align: middle;
 }
+.li-header-custom{
+    background-color: #F7F7F7;
+    color: #949494;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    border-radius: 2px;
+    border: none;
+    vertical-align: middle;
+}
+.li-header-custom:hover{
+    background-color: #bbbbbb;
+    color: #F7F7F7;
+}
+
+.li-header-custom-red{
+    background-color: #c62d19;
+    color: #F7F7F7;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    border-radius: 2px;
+    border: none;
+    vertical-align: middle;
+}
+.li-header-custom-red:hover{
+    background-color: #F7F7F7;
+    color: #c62d19;
+}
+
+.span-li-custom{
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #1a3b70;
+    font-weight: bold;
+}
+
 
 .a-nav-custom{
     display: flex;
@@ -40,6 +75,11 @@
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     color:white;
+    text-decoration: none;
+}
+.a-header-custom{
+    display: flex;
+    align-items: baseline;
     text-decoration: none;
 }
 
@@ -85,6 +125,21 @@ ul.navbar-brand {
     display: block;
 }
 
+.header-large{
+    display: block;
+    margin-top: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.header-small{
+    display: none;
+}
+
+.header-smaller{
+    display: none;
+}
+
 @media (max-width: 1100px) {
     .navbar-large {
         display: none;
@@ -93,12 +148,15 @@ ul.navbar-brand {
     .navbar-small {
         display: block;
     }
-    div{
-        flex-display: column; !important;
+
+    .header-large{
+        display: none;
     }
-    .fullscreen-div {
-        width: 80%;
-        margin-top:0px;
+
+    .header-small{
+        display: block;
+        padding-right: 60px;
+        padding-left: 60px;
     }
 }
 
@@ -113,19 +171,31 @@ ul.navbar-brand {
         width: 80%;
         margin-top:0px;
     }
+
+    .header-large{
+        display: none;
+    }
+    .header-small{
+        display: none;
+    }
+
+    .header-smaller{
+        display: block;
+    }
 }
 
-.fullscreen-div {
-    width: 80%;
-    margin-top: 50px;
+ul, li{
+    list-style-type: none ;
 }
 
-.header-custom {
-    padding-left: 70px;
-    padding-right: 70px;
+.span-custom-date {
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    width:150px;
 }
-
-.span-custom {
+.span-custom{
     font-family: "DM Serif Display", sans-serif;
     font-size: 14px;
     color: black;
@@ -144,6 +214,10 @@ ul.navbar-brand {
     align-items: flex-end;
 }
 
-.nav-small{
+.nav-m-small{
     margin-top:50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
