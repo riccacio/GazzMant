@@ -11,6 +11,17 @@
     border-top: 3px solid #1a3b70;
 }
 
+.body-color-2{
+    background-color: #1a3b70;
+    width:1100px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .bg-custom-small {
     background-color: #0c1a32;
     height: 50px;
@@ -21,6 +32,28 @@
 }
 .bg-custom-div{
     background-color: #F7F7F7;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-custom-body{
+    background-color: #F7F7F7;
+    width:1100px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-custom{
+    width: 100vw;
+}
+
+.post-left-custom{
+    background-color: #e7e4e4;
 }
 
 .btn-bg-custom{
@@ -33,6 +66,11 @@
     border: none;
     vertical-align: middle;
 }
+.h-body-2{
+    font-family: "DM Serif Display", serif;
+    color: white;
+}
+
 .li-header-custom{
     background-color: #F7F7F7;
     color: #949494;
@@ -82,8 +120,39 @@
     align-items: baseline;
     text-decoration: none;
 }
+.p-post-custom{
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    color:black;
+}
+.divider{
+   color: #1a3b70;
+}
+.card-custom{
+    width: 100%;
+}
 
 .a-nav-custom:hover {
+    text-decoration: underline;
+}
+
+.a-post-custom{
+    display: flex;
+    font-family: "DM Serif Display", serif;
+    color:black;
+    text-decoration: none;
+}
+
+.a-post-custom:hover{
+    text-decoration: underline;
+}
+
+.a-h-custom{
+    font-family: "DM Serif Display", serif;
+    color:#1a3b70;
+    text-decoration: none;
+}
+.a-h-custom:hover{
     text-decoration: underline;
 }
 
@@ -158,18 +227,22 @@ ul.navbar-brand {
         padding-right: 60px;
         padding-left: 60px;
     }
+    .div-custom-body{
+        background-color: #F7F7F7;
+        width:830px;
+        padding-right: 60px;
+        padding-left: 60px;
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 830px) {
     .navbar-smaller {
         display: none;
-    }
-    div{
-        flex-display: column; !important;
-    }
-    .fullscreen-div {
-        width: 80%;
-        margin-top:0px;
     }
 
     .header-large{
@@ -182,12 +255,34 @@ ul.navbar-brand {
     .header-smaller{
         display: block;
     }
+    .div-custom-body{
+        background-color: #F7F7F7;
+        width:300px;
+        padding-right: 60px;
+        padding-left: 60px;
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 ul, li{
     list-style-type: none ;
 }
 
+@media (max-width: 660px) {
+    .ul-custom{
+        width: 100vw;
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+.ul-custom{
+    display:flex;
+}
 .span-custom-date {
     font-family: "DM Serif Display", sans-serif;
     font-size: 14px;
@@ -215,6 +310,7 @@ ul, li{
 }
 
 .nav-m-small{
+    width: 100vw;
     margin-top:50px;
     padding-top: 0;
     padding-bottom: 0;
