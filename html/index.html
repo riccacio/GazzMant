@@ -12,15 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
     <script src="../js/current-date.js"></script>
+    <script src="../js/menu.js"></script>
 </head>
-<body class="flex-nowrap">
+<body class="flex-nowrap" style="overflow-x: hidden">
     <!-- Navbar -->
     <div class="navbar-large flex-nowrap">
-        <nav class="navbar navbar-expand-lg bg-custom d-flex justify-content-between fixed-top">
+        <nav class="navbar navbar-expand-lg bg-custom d-flex justify-content-between fixed-top z-2">
             <div class="navbar-brand align-items-center d-flex">
                 <div class="zoom-effect">
                     <a href="#">
-                        <img class="p-0" src="../node_modules/bootstrap-icons/icons/list.svg" alt="">
+                        <img class="p-0" id="openIcon" src="../node_modules/bootstrap-icons/icons/list.svg" alt="">
                     </a>
                 </div>
                 <div class="zoom-effect">
@@ -75,7 +76,7 @@
     </div>
     <!-- Navbar <1100 -->
     <div class="navbar-small">
-        <nav class="navbar navbar-expand-lg bg-custom-small container-fluid row flex-nowrap fixed-top">
+        <nav class="navbar navbar-expand-lg bg-custom-small container-fluid row flex-nowrap fixed-top z-2">
             <!-- Navbar <830 -->
             <div class="navbar-smaller zoom-effect col justify-content-center align-content-center">
                 <a class="a-nav-custom" href="#">Lorem ipsum</a>
@@ -96,10 +97,10 @@
     </div>
     <!-- Navbar <830 -->
     <div class="navbar-small">
-        <nav class="nav-m-small navbar-expand-lg bg-custom container-fluid d-flex justify-content-between w-100">
+        <nav class="nav-m-small navbar-expand-lg bg-custom container-fluid d-flex justify-content-between w-100 z-2">
                 <div class="zoom-effect d-flex justify-content-start align-items-center">
                     <a  href="#">
-                        <img src="../node_modules/bootstrap-icons/icons/list.svg" alt="">
+                        <img id="openIcon2" src="../node_modules/bootstrap-icons/icons/list.svg" alt="">
                     </a>
                 </div>
                 <div class="center-li-custom justify-content-between">
@@ -129,7 +130,7 @@
                     </div>
                 </div>
                 <div class="m-lg-3">
-                    <img src="../image/header.svg" alt="Gazzetta di Mantova">
+                    <img src="../image/headerLarge.svg" alt="Gazzetta di Mantova">
                 </div>
                 <div class="hstack align-bottom-custom pb-1">
                     <span class="d-flex span-custom-date justify-content-end" id="spanLarge"></span>
@@ -258,9 +259,44 @@
                 </ul>
             </div>
         </header>
-        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum-->
-        <div class="container">
-            <div class="row ">
+
+    </div>
+
+    <div id="myMenu" class="menu z-3">
+        <div class="d-flex container justify-content-between mt-2 mb-2">
+            <div></div>
+            <img src="../image/menu.svg" alt="">
+            <img id="closeIcon" src="../node_modules/bootstrap-icons/icons/x.svg" alt="">
+        </div>
+        <div class="row gap-3 m-1" style="background-color: #F7F7F7">
+            <div class="col ms-2 flex-column d-flex container">
+                <a href="" class="a-footer-custom">Lorem</a>
+                <a href="" class="a-footer-custom">Lorem</a>
+                <a href="" class="a-footer-custom">Lorem</a>
+            </div>
+            <div class="col m-0 flex-column d-flex container">
+                <a href="" class="a-footer-custom">Lorem</a>
+                <a href="" class="a-footer-custom">Lorem</a>
+                <a href="" class="a-footer-custom">Lorem</a>
+            </div>
+            <div class="col m-0 flex-column d-flex container">
+                <a href="" class="a-footer-custom">Lorem</a>
+                <a href="" class="a-footer-custom">Lorem</a>
+                <a href="" class="a-footer-custom">Lorem</a>
+            </div>
+            <div class="col m-0 flex-column d-flex container">
+                <a href="" class="a-footer-custom">Lorem</a>
+                <a href="" class="a-footer-custom">Lorem</a>
+                <a href="" class="a-footer-custom">Lorem</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Body-->
+    <div class="div-custom-body flex-nowrap">
+        <div class="container body-large">
+            <div class="row">
                 <div class="col-8 mt-2">
                     <div class="card border-0 mt-1 card-custom">
                         <a class="a-post-custom" href="#">
@@ -390,11 +426,136 @@
                 </div>
             </div>
         </div>
+        <div class="container body-small">
+            <div class="card border-0 mt-1 card-custom">
+                <a class="a-post-custom" href="#">
+                    <img src="../image/post1.png" class="card-img-top rounded-0" alt="750x375">
+                </a>
+                <div class="card-body">
+                    <p class="card-text p-post-custom">/// LOREM IPSUM</p>
+                    <a class="a-post-custom" href="#">
+                        <h2 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                    </a>
+                    <p class="card-text">di Riccardo Pacini</p>
+                </div>
+            </div>
+            <div class="card mt-4 mb-4 border-0 card-custom">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../image/post2.png" class="img-fluid" alt="260x150">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text p-post-custom">/// LOREM IPSUM</p>
+                            <a class="a-post-custom" href="#">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                            </a>
+                            <p class="card-text">di Riccardo Pacini</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4 mb-4 border-0 card-custom">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../image/post2.png" class="img-fluid" alt="260x150">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text p-post-custom">/// LOREM IPSUM</p>
+                            <a class="a-post-custom" href="#">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                            </a>
+                            <p class="card-text">di Riccardo Pacini</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4 mb-4 border-0 card-custom">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../image/post2.png" class="img-fluid" alt="260x150">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text p-post-custom">/// LOREM IPSUM</p>
+                            <a class="a-post-custom" href="#">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                            </a>
+                            <p class="card-text">di Riccardo Pacini</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-left-custom justify-content-center mt-3" style="width: 100%;">
+                <img src="../image/post3.png" class="card-img-top rounded-0 ps-4 pe-4 pb-4" style="margin-top: -20px" alt="300x250">
+            </div>
+            <a href="#" class="a-h-custom ">
+                <h3 class="mt-3 mb-4">Lorem Ipusm</h3>
+            </a>
+            <div class="post-left-custom justify-content-center mt-3" style="width: 100%;">
+                <img src="../image/post4.png" class="card-img-top rounded-0 ps-4 pe-4 pb-4" style="margin-top: -20px" alt="300x250">
+            </div>
+            <a href="#" class="a-h-custom ">
+                <h3 class="mt-3 mb-4">Lorem Ipusm</h3>
+            </a>
+            <div class="card mt-4 border-0 card-custom">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../image/post5.png" class="img-fluid mt-1" alt="260x150">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text p-post-custom m-0 p-0">/// LOREM IPSUM</p>
+                            <a class="a-post-custom" href="#">
+                                <p class="card-text p-post-custom" style="font-weight: bold;">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="divider">..............................................</p>
+            </div>
+            <div class="card border-0 card-custom">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../image/post5.png" class="img-fluid mt-1" alt="260x150">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text p-post-custom m-0 p-0">/// LOREM IPSUM</p>
+                            <a class="a-post-custom" href="#">
+                                <p class="card-text p-post-custom" style="font-weight: bold;">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="divider">..............................................</p>
+            </div>
+            <div class="card border-0 card-custom mb-4">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../image/post5.png" class="img-fluid mt-1" alt="260x150">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body ">
+                            <p class="card-text p-post-custom m-0 p-0">/// LOREM IPSUM</p>
+                            <a class="a-post-custom" href="#">
+                                <p class="card-text p-post-custom" style="font-weight: bold;">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="flex-nowrap body-color-2 pb-4">
         <div class="container">
             <h3 class="h-body-2 mt-3">Lorem Ipsum</h3>
-            <div class="hstack gap-4">
+            <div class="hstack gap-4 ul-custom">
                 <div class="card border-0" style="width: 14rem;">
                     <a class="a-post-custom" href="#">
                         <img src="../image/post6.png" class="card-img-top rounded-0" alt="220x120">
@@ -584,7 +745,6 @@
                     <div class="post-left-custom justify-content-center mt-3" style="width: 100%;">
                         <img src="../image/post3.png" class="card-img-top rounded-0 ps-4 pe-4 pb-4" style="margin-top: -20px" alt="300x250">
                     </div>
-
                     <a href="#" class="a-h-custom ">
                         <h3 class="mt-3 mb-4">Lorem</h3>
                     </a>
@@ -594,11 +754,89 @@
                 </div>
             </div>
         </div>
+        <div class="container pb-3 mb-2 border-bottom border-black border-5">
+            <div class="d-flex justify-content-center">
+                <p class="divider">.......................................................................................................................................................................................................................</p>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <a class="a-h-custom" href="#">
+                        <h2 class="h">Lorem</h2>
+                    </a>
+                    <div class="card border-0 rounded-0 text-center" style="width: 100%;">
+                        <img src="../image/post7.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <p class="card-text p-post-font">Lorem ipsum</p>
+                            <a href="#" class="btn btn-post">Lorem</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                    <a class="a-h-custom" href="#">
+                        <h2 class="h">Lorem</h2>
+                    </a>
+                    <div class="card border-0 rounded-0 text-center" style="width: 100%;">
+                        <img src="../image/post7.png" class="card-img-top rounded-0" alt="...">
+                        <div class="card-body">
+                            <p class="card-text p-post-font">Lorem ipsum</p>
+                            <a href="#" class="btn btn-post">Lorem</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-
+    <!-- Footer -->
+    <div class="div-custom-body mb-4 pb-4">
+        <div class="d-flex justify-content-between container mt-2">
+            <div class="d-flex hstack gap-3">
+                <a class ="a-footer-custom" href="#">Lorem</a>
+                <a class ="a-footer-custom" href="#">Lorem</a>
+                <a class ="a-footer-custom" href="#">Lorem</a>
+                <a class ="a-footer-custom" href="#">Lorem</a>
+                <a class ="a-footer-custom" href="#">Lorem</a>
+            </div>
+            <div class="d-flex hstack gap-3">
+                <a class ="a-footer-custom" href="#">
+                    <img src="../node_modules/bootstrap-icons/icons/whatsappBlue.svg" alt="whatsapp">
+                </a>
+                <a class ="a-footer-custom" href="#">
+                    <img src="../node_modules/bootstrap-icons/icons/facebookBlue.svg" alt="facebook">
+                </a>
+                <a class ="a-footer-custom" href="#">Lorem</a>
+                <a class ="btn btn-post" href="#">Lorem</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="divider">...........................................................................................................................................................................................................................</p>
+        </div>
+        <div class="container d-flex justify-content-start">
+            <p class="p-footer-custom">LOREM</p>
+        </div>
+        <div class="d-flex container justify-content-center gap-3 mt-2 mb-2">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+            <img src="../image/footerImgs.png" alt="footer image">
+        </div>
+        <div class="d-flex container justify-content-start">
+            <p class="p-footer-custom mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="d-flex container justify-content-start">
+            <p class="p-footer-custom">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
 </body>
-
 </html>
+
+<!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum-->

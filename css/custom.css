@@ -36,6 +36,22 @@
     justify-content: center;
 }
 
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.5s ease;
+}
+
+.menu.open {
+    left: 0;
+}
+
+
 .div-custom-body{
     background-color: #F7F7F7;
     width:1100px;
@@ -106,6 +122,38 @@
     font-weight: bold;
 }
 
+.p-post-font{
+    font-family: "DM Serif Display", serif;
+}
+
+.btn-post{
+    background-color: #1a3b70;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+.btn-post:hover{
+    background-color: #0c1a32;
+    color: white;
+}
+
+.p-footer-custom{
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    color: #333333;
+
+}
+
+.a-footer-custom{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    color: #1a3b70;
+    text-decoration: none;
+}
+
+.a-footer-custom:hover{
+    text-decoration: underline;
+}
 
 .a-nav-custom{
     display: flex;
@@ -209,6 +257,14 @@ ul.navbar-brand {
     display: none;
 }
 
+.body-large{
+    display: block;
+}
+
+.body-small{
+    display: none;
+}
+
 @media (max-width: 1100px) {
     .navbar-large {
         display: none;
@@ -227,9 +283,31 @@ ul.navbar-brand {
         padding-right: 60px;
         padding-left: 60px;
     }
+
+    .body-large{
+        display: none;
+    }
+
+    .body-small{
+        display: block;
+    }
+
+
     .div-custom-body{
         background-color: #F7F7F7;
-        width:830px;
+        width:860px;
+        padding-right: 60px;
+        padding-left: 60px;
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .body-color-2{
+        background-color: #1a3b70;
+        width:860px;
         padding-right: 60px;
         padding-left: 60px;
         margin:auto;
@@ -257,7 +335,18 @@ ul.navbar-brand {
     }
     .div-custom-body{
         background-color: #F7F7F7;
-        width:300px;
+        width:600px;
+        padding-right: 60px;
+        padding-left: 60px;
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .body-color-2{
+        background-color: #1a3b70;
+        width:600px;
         padding-right: 60px;
         padding-left: 60px;
         margin:auto;
