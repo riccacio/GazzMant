@@ -10,9 +10,11 @@
 .hr-color {
     border-top: 3px solid #1a3b70;
 }
+
 body.no-scroll{
     overflow: hidden;
 }
+
 .body-color-2{
     background-color: #1a3b70;
     width:1100px;
@@ -24,6 +26,7 @@ body.no-scroll{
     align-items: center;
     flex-direction: column;
 }
+
 .bg-custom-small {
     background-color: #0c1a32;
     height: 50px;
@@ -32,6 +35,7 @@ body.no-scroll{
     padding-right: 16px;
     margin: 0;
 }
+
 .bg-custom-div{
     background-color: #F7F7F7;
     align-items: center;
@@ -44,7 +48,7 @@ body.no-scroll{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Cambia il colore e l'opacità come preferisci */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu {
@@ -61,7 +65,6 @@ body.no-scroll{
     left: 0;
 }
 
-
 .div-custom-body{
     background-color: #F7F7F7;
     width:1100px;
@@ -74,8 +77,9 @@ body.no-scroll{
     flex-direction: column;
 }
 
-.card-custom{
-    width: 100vw;
+.col-custom{
+    flex: 224px;
+    padding:0;
 }
 
 .post-left-custom{
@@ -92,6 +96,7 @@ body.no-scroll{
     border: none;
     vertical-align: middle;
 }
+
 .h-body-2{
     font-family: "DM Serif Display", serif;
     color: white;
@@ -106,6 +111,7 @@ body.no-scroll{
     border: none;
     vertical-align: middle;
 }
+
 .li-header-custom:hover{
     background-color: #bbbbbb;
     color: #F7F7F7;
@@ -120,6 +126,7 @@ body.no-scroll{
     border: none;
     vertical-align: middle;
 }
+
 .li-header-custom-red:hover{
     background-color: #F7F7F7;
     color: #c62d19;
@@ -173,19 +180,23 @@ body.no-scroll{
     color:white;
     text-decoration: none;
 }
+
 .a-header-custom{
     display: flex;
     align-items: baseline;
     text-decoration: none;
 }
+
 .p-post-custom{
     font-family: "DM Sans", sans-serif;
     font-size: 13px;
     color:black;
 }
+
 .divider{
    color: #1a3b70;
 }
+
 .card-custom{
     width: 100%;
 }
@@ -210,6 +221,7 @@ body.no-scroll{
     color:#1a3b70;
     text-decoration: none;
 }
+
 .a-h-custom:hover{
     text-decoration: underline;
 }
@@ -358,19 +370,20 @@ ul.navbar-brand {
     .div-custom-body{
         background-color: #F7F7F7;
         width:600px;
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right:20px;
+        padding-left: 20px;
         margin:auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
     .body-color-2{
         background-color: #1a3b70;
         width:600px;
-        padding-right: 60px;
-        padding-left: 60px;
+        padding-right: 20px;
+        padding-left: 20px;
         margin:auto;
         display: flex;
         justify-content: center;
@@ -393,17 +406,42 @@ ul, li{
     list-style-type: none ;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 600px) {
     .ul-custom{
         width: 100vw;
         display: flex;
+        justify-content: center;
         overflow-x: auto;
         white-space: nowrap;
+        padding:0;
+    }
+
+    .div-custom-body{
+        background-color: #F7F7F7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top:0;
+        padding:0;
+        width: 100vw;
+    }
+
+    .body-color-2{
+        background-color: #1a3b70;
+        width:100vw;
+        padding:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
+
 .ul-custom{
     display:flex;
 }
+
 .span-custom-date {
     font-family: "DM Serif Display", sans-serif;
     font-size: 14px;
@@ -411,11 +449,18 @@ ul, li{
     font-weight: bold;
     width:170px;
 }
+
 .span-custom{
     font-family: "DM Serif Display", sans-serif;
     font-size: 14px;
     color: black;
     font-weight: bold;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .span-weather-custom {
@@ -425,16 +470,12 @@ ul, li{
     font-weight: bold;
 }
 
-
 .align-bottom-custom{
     align-items: flex-end;
 }
 
 .nav-m-small{
     width: 100vw;
-    margin-top:50px;
-    padding-top: 0;
-    padding-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
 }
