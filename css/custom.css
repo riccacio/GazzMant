@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .bg-custom {
     background-color: #1a3b70;
     height: 50px;
@@ -437,7 +441,6 @@ ul, li{
         flex-direction: column;
     }
 }
-
 .ul-custom{
     display:flex;
 }
@@ -475,7 +478,11 @@ ul, li{
 }
 
 .nav-m-small{
-    width: 100vw;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.border-custom{
+    border-bottom: 3px dotted #1a3b70;
 }
