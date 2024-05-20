@@ -106,7 +106,7 @@ body.no-scroll{
     color: white;
 }
 
-.li-header-custom{
+.div-header-custom{
     background-color: #F7F7F7;
     color: #949494;
     font-family: "DM Sans", sans-serif;
@@ -116,12 +116,12 @@ body.no-scroll{
     vertical-align: middle;
 }
 
-.li-header-custom:hover{
+.div-header-custom:hover{
     background-color: #bbbbbb;
     color: #F7F7F7;
 }
 
-.li-header-custom-red{
+.div-header-custom-red{
     background-color: #c62d19;
     color: #F7F7F7;
     font-family: "DM Sans", sans-serif;
@@ -131,7 +131,7 @@ body.no-scroll{
     vertical-align: middle;
 }
 
-.li-header-custom-red:hover{
+.div-header-custom-red:hover{
     background-color: #F7F7F7;
     color: #c62d19;
 }
@@ -420,7 +420,6 @@ ul, li{
         align-items: center;
         flex-direction: column;
     }
-
 
     .div-custom-body{
         background-color: #F7F7F7;
