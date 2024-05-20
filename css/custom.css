@@ -442,9 +442,6 @@ ul, li{
         flex-direction: column;
     }
 }
-.ul-custom{
-    display:flex;
-}
 
 .span-custom-date {
     font-family: "DM Serif Display", sans-serif;
